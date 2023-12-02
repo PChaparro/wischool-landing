@@ -1,0 +1,30 @@
+---
+import "../global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  keywords?: string;
+}
+
+const {
+  title = "WiSchool",
+  description = "Quality education by any means necessary",
+  keywords = "education, marketing, design, programming, technology, online, courses, learning",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <link rel="icon" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
