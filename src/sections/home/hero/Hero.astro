@@ -1,0 +1,51 @@
+---
+import Button from "../../../components/button/Button.astro";
+---
+
+<style>
+  @media (min-width: 768px) {
+    .hero__text::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      background-color: #09b451;
+      filter: blur(150px) opacity(0.15);
+      left: 0;
+      bottom: 0;
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    .hero__image::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 100%;
+      background-color: #e7faef;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      border-radius: 0 62px 62px 0;
+    }
+  }
+</style>
+
+<section
+  class="mx-auto max-w-screen-xl overflow-hidden rounded-[3rem] p-4 capitalize"
+>
+  <div
+    class="relative grid gap-16 overflow-x-hidden rounded-[3rem] p-12 md:grid-cols-2 md:gap-0"
+  >
+    <div class="hero__text">
+      <h1 class="mb-12 text-6xl font-bold leading-normal">
+        Quality <span class="text-primary">education</span> by any means
+        necessary.
+      </h1>
+      <Button asElement="a">Get started</Button>
+    </div>
+    <div class="hero__image flex items-center">
+      <img src="/images/hero-image.webp" alt="Hero image" />
+    </div>
+  </div>
+</section>
