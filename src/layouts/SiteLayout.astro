@@ -1,5 +1,6 @@
 ---
 import "../global.css";
+import Navbar from "../components/navbar/Navbar.astro";
 
 interface Props {
   title?: string;
@@ -10,7 +11,7 @@ interface Props {
 const {
   title = "WiSchool",
   description = "Quality education by any means necessary",
-  keywords = "education, marketing, design, programming, technology, online, courses, learning",
+  keywords = "education, marketing, design, programming, technology, online, courses, learning"
 } = Astro.props;
 ---
 
@@ -25,6 +26,7 @@ const {
     <title>{title}</title>
   </head>
   <body>
+    <Navbar />
     <slot />
   </body>
 </html>

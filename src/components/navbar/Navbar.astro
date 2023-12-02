@@ -1,0 +1,27 @@
+---
+import { Icon } from "astro-icon";
+import Button from "../button/Button.astro";
+---
+
+<nav
+  class="mx-auto flex h-[100px] max-w-screen-xl items-center justify-between gap-8 p-4 shadow-md md:shadow-none"
+>
+  <div class="flex items-center gap-8">
+    <Icon name="menu-hamburger" size="32" class="md:hidden" />
+    <img src="/logo.svg" alt="WiSchool logo" class="h-10" />
+  </div>
+  <ul
+    class="hidden flex-wrap justify-center gap-8 text-gray-600 md:flex [&>li:hover]:text-primary [&>li]:transition-colors"
+  >
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Courses</a></li>
+    <li><a href="#">Instructors</a></li>
+    <li><a href="#">Schedules</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+  <div class="hidden gap-4 md:flex">
+    <Button asElement="a" href="#" variant="ghost">Login</Button>
+    <Button asElement="a" href="#">Register</Button>
+  </div>
+  <Icon name="account-rounded" size="32" class="md:hidden" />
+</nav>
