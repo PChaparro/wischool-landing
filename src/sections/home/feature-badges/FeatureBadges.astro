@@ -1,0 +1,14 @@
+---
+import BadgesData from "../../../data/badges.json";
+import Badge from "../../../components/feature-badge/FeatureBadge.astro";
+---
+
+<section class="mx-auto my-12 max-w-screen-xl p-4">
+  <ul class="flex flex-wrap justify-evenly gap-4">
+    {
+      BadgesData.map((badge) => (
+        <Badge text={badge.text} iconName={badge["icon-name"]} />
+      ))
+    }
+  </ul>
+</section>
