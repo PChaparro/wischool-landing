@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Learn marketing from top instructors",
+    "length": "6 weeks",
+    "students": "1.5k",
+    "price": 30.5,
+    "stars": 4.5,
+    "thumbnail": "/images/popular-courses/0.jpg"
+  },
+  {
+    "name": "Front-end development is not hard as you think",
+    "length": "6 weeks",
+    "students": "1.5k",
+    "price": 30.5,
+    "stars": 4.5,
+    "thumbnail": "/images/popular-courses/1.jpg"
+  },
+  {
+    "name": "Everything you need to know in UX",
+    "length": "6 weeks",
+    "students": "1.5k",
+    "price": 30.5,
+    "stars": 4.5,
+    "thumbnail": "/images/popular-courses/2.jpg"
+  },
+  {
+    "name": "Learn photography with ease",
+    "length": "6 weeks",
+    "students": "1.5k",
+    "price": 30.5,
+    "stars": 4.5,
+    "thumbnail": "/images/popular-courses/3.jpg"
+  },
+  {
+    "name": "Be a pro in data analysis",
+    "length": "6 weeks",
+    "students": "1.5k",
+    "price": 30.5,
+    "stars": 4.5,
+    "thumbnail": "/images/popular-courses/4.jpg"
+  },
+  {
+    "name": "Ethical Harking is not hard as you think ",
+    "length": "6 weeks",
+    "students": "1.5k",
+    "price": 30.5,
+    "stars": 4.5,
+    "thumbnail": "/images/popular-courses/5.jpg"
+  }
+]
