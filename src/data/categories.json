@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Marketing",
+    "thumbnail": "/images/categories/marketing.jpg",
+    "description": "Elevate your brand with strategic marketing. From planning to digital tactics, master the art of captivating your audience effectively"
+  },
+  {
+    "name": "Design",
+    "thumbnail": "/images/categories/design.jpg",
+    "description": "Unlock your creative potential with our design courses. From graphic basics to advanced techniques, refine your skills and bring visions to life effortlessly"
+  },
+  {
+    "name": "Programming",
+    "thumbnail": "/images/categories/programming.jpg",
+    "description": "Unlock coding mastery with our courses. From basics to advanced skills, delve into the world of programming and unleash innovation"
+  },
+  {
+    "name": "Technology",
+    "thumbnail": "/images/categories/technology.jpg",
+    "description": "Elevate your brand with strategic marketing. From planning to digital tactics, master the art of captivating your audience effectively"
+  },
+  {
+    "name": "Cyber security",
+    "thumbnail": "/images/categories/cyber-security.jpg",
+    "description": "Explore cutting-edge tech in our courses. From AI to cybersecurity, stay ahead in the digital era with our dynamic learning modules"
+  },
+  {
+    "name": "Data science",
+    "thumbnail": "/images/categories/data-science.jpg",
+    "description": "Uncover insights and drive decisions with our data science courses. From analytics to machine learning, master the art of data-driven solutions"
+  }
+]

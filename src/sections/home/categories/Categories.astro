@@ -1,0 +1,9 @@
+---
+import { CategoriesCarousel } from "../../../components/categories-carousel/CategoriesCarousel.tsx";
+import Title from "../../../components/ui/Title.astro";
+---
+
+<section class="mx-auto max-w-screen-xl p-4">
+  <Title TitleTag="h2" text="Choose your favorite course from top categories" />
+  <CategoriesCarousel client:load />
+</section>
