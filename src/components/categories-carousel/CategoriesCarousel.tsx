@@ -10,6 +10,7 @@ import {
   Slider
 } from "pure-react-carousel";
 import { Arrow } from "./Arrow";
+import { CategoryCard } from "./CategoryCard";
 
 export const CategoriesCarousel = () => {
   return (
@@ -20,31 +21,23 @@ export const CategoriesCarousel = () => {
       step={1}
       naturalSlideHeight={400}
       naturalSlideWidth={300}
+      isPlaying={true}
     >
       <div className="relative">
         <Slider>
           {categories.map((category, index) => (
             <Slide key={index} index={index} className="border">
-              <article className="group relative h-full w-full">
-                <img
-                  src={category.thumbnail}
-                  alt={`${category.name} thumbnail`}
-                  className="absolute aspect-[3/4] h-full w-full object-cover object-center brightness-[40%]"
-                />
-                <div className="absolute bottom-0 left-0 right-0 top-0 z-10 flex flex-col justify-end gap-2 p-4 text-white">
-                  <h3 className="text-3xl font-semibold">{category.name}</h3>
-                  <p className="max-h-0 overflow-hidden text-lg transition-all duration-500 ease-in-out group-hover:max-h-64">
-                    {category.description}
-                  </p>
-                </div>
-              </article>
+              <CategoryCard
+                key={`category-card-idx-${index}`}
+                category={category}
+              />
             </Slide>
           ))}
         </Slider>
-        <ButtonBack className="absolute left-4 top-1/2 -translate-y-1/2">
+        <ButtonBack className="absolute left-4 top-1/2 hidden -translate-y-1/2 md:block">
           <Arrow direction="left" />
         </ButtonBack>
-        <ButtonNext className="absolute right-4 top-1/2 -translate-y-1/2">
+        <ButtonNext className="absolute right-4 top-1/2 hidden -translate-y-1/2 md:block">
           <Arrow direction="right" />
         </ButtonNext>
       </div>
