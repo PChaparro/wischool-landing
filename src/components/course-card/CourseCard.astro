@@ -1,0 +1,57 @@
+---
+import Icon from "astro-icon";
+
+type course = {
+  name: string;
+  length: string;
+  students: string;
+  price: number;
+  stars: number;
+  thumbnail: string;
+};
+
+interface Props {
+  course: course;
+}
+
+const { course } = Astro.props;
+---
+
+<article
+  class="overflow-hidden rounded-lg shadow transition-colors hover:shadow-md"
+>
+  <img
+    src={course.thumbnail}
+    alt={`${course.name} thumnbnail`}
+    class="aspect-video w-full object-cover"
+    loading="lazy"
+  />
+  <div class="flex flex-grow flex-col justify-between gap-8 p-4">
+    {/* Title and stars count*/}
+    <div class="flex justify-between gap-4">
+      <h3 class="text-xl font-medium capitalize">{course.name}</h3>
+      <p class="flex h-min items-center">
+        <Icon pack="feather" name="star" class="mr-1 text-primary" size={20} />
+        {course.stars}
+      </p>
+    </div>
+    {/* Duration, students and price */}
+    <div class="flex justify-between">
+      <p class="flex gap-4">
+        <span>{course.length}</span>
+        <span class="flex gap-1">
+          <Icon name="people" size={20} />
+          {course.students}
+        </span>
+      </p>
+      <p class="text-xl font-medium text-primary">
+        {
+          course.price.toLocaleString("en-US", {
+            style: "currency",
+            currency: "USD"
+          })
+        }
+      </p>
+    </div>
+  </div>
+</article>
