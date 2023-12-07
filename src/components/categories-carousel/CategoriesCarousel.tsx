@@ -11,15 +11,15 @@ import {
 } from "pure-react-carousel";
 import { Arrow } from "./Arrow";
 import { CategoryCard } from "./CategoryCard";
-import { useIsMobileScreen } from "../../hooks/useIsMobileScreen";
+import { useGetDeviceTypeFromScreen } from "../../hooks/useGetDeviceTypeFromScreen";
 
 export const CategoriesCarousel = () => {
-  const isMobileScreen = useIsMobileScreen();
+  const deviceType = useGetDeviceTypeFromScreen();
 
   return (
     <CarouselProvider
       totalSlides={categories.length}
-      visibleSlides={isMobileScreen ? 3 : 4}
+      visibleSlides={deviceType === "mobile" ? 3 : 4}
       infinite={true}
       step={1}
       naturalSlideHeight={400}

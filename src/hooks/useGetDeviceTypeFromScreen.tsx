@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 
-export const useIsMobileScreen = () => {
+type deviceType = "mobile" | "desktop";
+
+export const useGetDeviceTypeFromScreen = (): deviceType => {
   const [width, setWidth] = useState(window.innerWidth);
   const handleWindowSizeChange = () => {
     setWidth(window.innerWidth);
@@ -13,5 +15,5 @@ export const useIsMobileScreen = () => {
     };
   }, []);
 
-  return width <= 768;
+  return width < 768 ? "mobile" : "desktop";
 };
