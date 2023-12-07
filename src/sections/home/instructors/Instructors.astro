@@ -1,0 +1,18 @@
+---
+import instructors from "../../../data/instructors.json";
+import Title from "../../../components/ui/Title.astro";
+import InstructorCard from "../../../components/instructor-card/InstructorCard.astro";
+---
+
+<section>
+  <Title TitleTag="h2" text="Meet our instructors" />
+  <ul class="flex flex-wrap justify-center gap-8">
+    {
+      instructors.map((instructor) => (
+        <li class="w-full max-w-sm ">
+          <InstructorCard instructorQuote={{ ...instructor }} />
+        </li>
+      ))
+    }
+  </ul>
+</section>

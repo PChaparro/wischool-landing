@@ -1,0 +1,20 @@
+[
+  {
+    "profilePicture": "/images/instructors/john-mark.jpg",
+    "name": "John Mark",
+    "position": "Senior Developer",
+    "quote": "Education will be for you what you want it to be"
+  },
+  {
+    "profilePicture": "/images/instructors/lara-shrof.jpg",
+    "name": "Lara Shrof",
+    "position": "Marketing Lead",
+    "quote": "Knowledge has to be improved, challenged, and increased constantly, or it vanishes"
+  },
+  {
+    "profilePicture": "/images/instructors/zeng-chin.jpg",
+    "name": "Zeng Chin",
+    "position": "Data Scientist",
+    "quote": "To know that we know what we know, and to know that we do not know what we do not know, that is true knowledge"
+  }
+]
