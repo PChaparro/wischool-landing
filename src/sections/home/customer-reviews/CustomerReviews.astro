@@ -3,7 +3,7 @@ import Title from "../../../components/ui/Title.astro";
 import { ReviewsCarousel } from "../../../components/reviews-carousel/ReviewsCarousel.tsx";
 ---
 
-<section class="overflow-x-hidden">
+<section class="mx-auto max-w-screen-xl overflow-x-hidden">
   <Title TitleTag="h2" text="Reviews" extraClasses="text-center" />
   <ReviewsCarousel client:only />
 </section>
