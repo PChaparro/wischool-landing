@@ -17,8 +17,14 @@ interface Props {
 const { course } = Astro.props;
 ---
 
+<style>
+  .course-card {
+    box-shadow: 0px 0px 16px #efefef;
+  }
+</style>
+
 <article
-  class="flex h-full w-full max-w-sm flex-col overflow-hidden rounded-lg shadow transition-colors hover:shadow-md"
+  class="course-card flex h-full w-full max-w-sm flex-col overflow-hidden rounded-lg transition-colors"
 >
   <img
     src={course.thumbnail}
