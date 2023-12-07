@@ -2,11 +2,14 @@
 interface Props {
   text: string;
   TitleTag: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+  extraClasses?: string;
 }
 
-const { TitleTag, text } = Astro.props;
+const { TitleTag, text, extraClasses } = Astro.props;
 ---
 
-<TitleTag class="my-12 text-2xl font-semibold md:text-3xl">
+<TitleTag
+  class:list={["my-12 text-2xl font-semibold md:text-3xl", extraClasses]}
+>
   {text}
 </TitleTag>
