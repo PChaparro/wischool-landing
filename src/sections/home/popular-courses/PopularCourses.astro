@@ -8,9 +8,7 @@ import CourseCard from "../../../components/course-card/CourseCard.astro";
 
 <section class="mx-auto max-w-screen-xl p-4">
   <Title TitleTag="h2" text="Most popular courses" />
-  <ul
-    class="grid grid-cols-[repeat(auto-fill,minmax(380px,1fr))] items-center gap-8"
-  >
+  <ul class="flex flex-wrap items-center justify-evenly gap-8">
     {
       popularCourses.map((course) => (
         <li class="self-stretch">
