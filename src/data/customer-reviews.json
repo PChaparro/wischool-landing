@@ -1,0 +1,26 @@
+[
+  {
+    "profilePicture": "/images/customers/oliver-bennett.jpg",
+    "name": "Oliver Bennett",
+    "role": "Senior Developer",
+    "review": "Absolutely loved the course! The material was engaging, and the instructor was fantastic. A game-changer for my career. Highly recommend"
+  },
+  {
+    "profilePicture": "/images/customers/sophia-rodriguez.jpg",
+    "name": "Sophia Rodriguez",
+    "role": "Data Analyst",
+    "review": "The course exceeded my expectations. The content was insightful, and the interactive approach made learning enjoyable. Great value for money!"
+  },
+  {
+    "profilePicture": "/images/customers/ethan-mitchell.jpg",
+    "name": "Ethan Mitchell",
+    "role": "Ethical Hacker",
+    "review": "Top-notch course! The content was comprehensive, and the instructors were experts in their field. A fantastic investment in my professional development."
+  },
+  {
+    "profilePicture": "/images/customers/isabella-hayes.jpg",
+    "name": "Isabella Hayes",
+    "role": "Software Engineer",
+    "review": "Incredible learning experience! The course structure was well-planned, and the resources provided were invaluable. I feel more confident and skilled after completing this course."
+  }
+]
