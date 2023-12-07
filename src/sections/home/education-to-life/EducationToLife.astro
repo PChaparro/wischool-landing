@@ -1,0 +1,68 @@
+---
+import { Image } from "astro:assets";
+import Icon from "astro-icon";
+import Title from "../../../components/ui/Title.astro";
+
+const feature = [
+  {
+    text: "Free E-books, videos and kits",
+    iconName: "opened-book"
+  },
+  {
+    text: "Learn at your own pace",
+    iconName: "carbon:time"
+  },
+  {
+    text: "Collaborate with different learners around the globe",
+    iconName: "carbon:globe"
+  },
+  {
+    text: "Top instructors from the industry",
+    iconName: "group"
+  }
+];
+---
+
+<style>
+  .section__title {
+    text-wrap: balance;
+    line-height: 1.4;
+  }
+</style>
+
+<section class="mx-auto max-w-7xl p-4">
+  <Title TitleTag="h2" text="We bring the good education to life" />
+  <div class="flex flex-col items-start gap-8 md:flex-row">
+    <Image
+      src="/images/job-oportunities.png"
+      alt="A woman smiling at the camera with a text that says 'Job opportunities'"
+      class="w-full md:w-[40%]"
+      width="430"
+      height="461"
+    />
+    <div class="flex-grow">
+      <h3
+        class="section__title mb-4 text-3xl font-semibold capitalize md:text-5xl"
+      >
+        Let your education do the walking
+      </h3>
+      <ul class="flex flex-col gap-6">
+        {
+          feature.map((item) => (
+            <li class="flex items-center gap-4">
+              <span class="grid place-content-center rounded-full bg-primary p-3">
+                <Icon
+                  name={item.iconName}
+                  size="24"
+                  class="aspect-square"
+                  color="white"
+                />
+              </span>
+              <p>{item.text}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>
