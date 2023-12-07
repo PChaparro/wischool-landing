@@ -7,13 +7,17 @@ import CategoriesSection from "../sections/home/categories/Categories.astro";
 import PopularCoursesSection from "../sections/home/popular-courses/PopularCourses.astro";
 import EducationToLifeSection from "../sections/home/education-to-life/EducationToLife.astro";
 import CustomerReviewsSection from "../sections/home/customer-reviews/CustomerReviews.astro";
+import InstructorsSection from "../sections/home/instructors/Instructors.astro";
 ---
 
 <SiteLayout>
-  <HeroSection />
-  <FeatureBadgesSection />
-  <CategoriesSection />
-  <PopularCoursesSection />
-  <EducationToLifeSection />
-  <CustomerReviewsSection />
+  <main class="mx-auto max-w-screen-xl [&>section]:p-4">
+    <HeroSection />
+    <FeatureBadgesSection />
+    <CategoriesSection />
+    <PopularCoursesSection />
+    <EducationToLifeSection />
+    <CustomerReviewsSection />
+    <InstructorsSection />
+  </main>
 </SiteLayout>
