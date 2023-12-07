@@ -14,7 +14,7 @@ export default {
 					soft: "#E7FAEF", 
 				},
 				secondary: {
-					DEFAULT: "#E4FFFF"
+					DEFAULT: "#E7FAEF"
 				}
 			}
 		},

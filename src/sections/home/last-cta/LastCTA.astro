@@ -1,0 +1,46 @@
+---
+import Button from "../../../components/button/Button.astro";
+---
+
+<style>
+  .last-cta {
+    background-image: url("/images/last-cta-background.webp");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .last-cta__title {
+    text-wrap: balance;
+  }
+</style>
+
+<div class="last-cta w-auto">
+  <section
+    class="mx-auto mt-32 grid max-w-screen-xl gap-8 px-4 py-8 text-center md:grid-cols-3 md:text-left"
+  >
+    <img
+      src="/images/last-cta-image.webp"
+      alt="A woman smiling and wearing a headset"
+      class="-mt-24 hidden rounded-2xl md:block"
+      width="515"
+      height="515"
+      loading="lazy"
+      decoding="async"
+    />
+    <div class="col-span-2 flex flex-col gap-12 text-white md:px-16">
+      <div>
+        <h2 class="last-cta__title mb-4 text-2xl font-bold md:text-4xl">
+          You don't have to see the whole staircase just take the first step
+        </h2>
+        <p class="text-xl">
+          Embrace change. Start your journey, no need to see the whole
+          staircase, just take the first step.
+        </p>
+      </div>
+      <div>
+        <Button asElement="button" extraClasses="mr-4">Get started</Button>
+        <Button asElement="button" variant="secondary">Place a call</Button>
+      </div>
+    </div>
+  </section>
+</div>
