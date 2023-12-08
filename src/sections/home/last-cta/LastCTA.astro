@@ -16,7 +16,7 @@ import Button from "../../../components/button/Button.astro";
 
 <div class="last-cta w-auto">
   <section
-    class="mx-auto mt-32 grid max-w-screen-xl gap-8 px-4 py-8 text-center md:grid-cols-3 md:text-left"
+    class="mx-auto mt-32 grid max-w-screen-xl gap-8 px-4 py-16 text-center md:grid-cols-3 md:text-left"
   >
     <img
       src="/images/last-cta-image.webp"
@@ -37,8 +37,8 @@ import Button from "../../../components/button/Button.astro";
           staircase, just take the first step.
         </p>
       </div>
-      <div>
-        <Button asElement="button" extraClasses="mr-4">Get started</Button>
+      <div class="flex flex-wrap justify-center gap-4">
+        <Button asElement="button">Get started</Button>
         <Button asElement="button" variant="secondary">Place a call</Button>
       </div>
     </div>

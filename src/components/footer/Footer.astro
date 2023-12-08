@@ -1,0 +1,67 @@
+---
+import Icon from "astro-icon";
+import FooterList from "./FooterList.astro";
+---
+
+<footer class="bg-black text-white">
+  {/* Size limiter */}
+  <div class="mx-auto max-w-screen-xl p-4 md:py-16">
+    {/* Content container */}
+    <div class="flex flex-col gap-4 md:flex-col-reverse">
+      {/* Input row */}
+      <div class="mb-8 w-full text-center md:mb-0 md:mt-8">
+        <h2 class="mb-4 text-2xl font-medium">
+          Subscribe to get latest updates
+        </h2>
+        <div class="mx-auto flex max-w-lg">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="w-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+          />
+          <button
+            class="bg-primary px-6 py-3 transition-colors hover:bg-primary/90"
+          >
+            Subscribe</button
+          >
+        </div>
+      </div>
+      {/* Logo and links row */}
+      <div class="flex flex-col gap-8 md:flex-row-reverse md:gap-16">
+        {/* Links */}
+        <div
+          class="grid grid-cols-2 gap-8 sm:grid-cols-3 md:w-3/4 md:grid-cols-5"
+        >
+          <FooterList
+            elements={["Home", "Services", "Training", "Resources", "About Us"]}
+          />
+          <FooterList elements={["SME", "Solutions", "Reviews", "Blog"]} />
+          <FooterList elements={["Contact Us", "Place a call", "Email"]} />
+          <FooterList elements={["Job opening", "News", "Research"]} />
+          <FooterList elements={["FAQ", "Privacy Policy", "Terms of use"]} />
+        </div>
+        {/* Logo and socials container */}
+        <div class="flex flex-col items-center gap-4 md:w-1/4 md:items-start">
+          <img
+            src="/logo-white.svg"
+            alt="WiSchool logo"
+            class="h-10"
+            loading="lazy"
+            width="128"
+            height="40"
+          />
+          <p class="hidden md:block">
+            We are not here to sell you products, we sell value through our
+            expertise.
+          </p>
+          <div class="flex gap-2">
+            <Icon name="carbon:logo-facebook" color="#09B451" size="24" />
+            <Icon name="carbon:logo-twitter" color="#09B451" size="24" />
+            <Icon name="carbon:logo-instagram" color="#09B451" size="24" />
+            <Icon name="carbon:logo-linkedin" color="#09B451" size="24" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

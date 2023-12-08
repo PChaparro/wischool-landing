@@ -1,0 +1,17 @@
+---
+interface Props {
+  elements: string[];
+}
+
+const { elements } = Astro.props;
+---
+
+<ul class="text-center text-sm md:text-left">
+  {
+    elements.map((element) => (
+      <li class="transition-colors hover:text-primary">
+        <a href="#">{element}</a>
+      </li>
+    ))
+  }
+</ul>
